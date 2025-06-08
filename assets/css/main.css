@@ -2652,3 +2652,87 @@ p + p{
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
+
+footer {
+  background-color: #1e2534; 
+  color: #b4b6bf; 
+  margin-top: 3rem;
+  padding: 2rem 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .footer-left,
+  .footer-right {
+    width: 50%;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #b4b6bf;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer-link:hover {
+  color: #eeeef0;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+}
+
+
+
+.logo-container {
+  width: 15rem;
+  max-width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+
+.logo-link {
+  display: block;
+  width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
