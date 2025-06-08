@@ -341,3 +341,26 @@
     @apply w-full;
   }
 }
+
+
+@layer components {
+  .footer-custom {
+    @apply bg-primary-dark-2 text-body-dark-11 pt-10 pb-6 mt-12;
+  }
+
+  .container-footer {
+    @apply container mx-auto px-4 flex flex-col items-center text-center;
+  }
+
+  .footer-info {
+    @apply w-full max-w-3xl;
+  }
+
+  .footer-copy {
+    @apply text-sm mb-2;
+  }
+
+  .footer-slogan {
+    @apply text-lg font-semibold italic text-primary-dark-11 tracking-wide;
+  }
+}
