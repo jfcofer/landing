@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@import "./_generated-vars.css";
+
+html.light,
+html.dark {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
