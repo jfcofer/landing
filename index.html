@@ -2135,9 +2135,24 @@
                       ></i>
                     </div>
                     <div>
-                      <h4 class="text-[1.25rem] text-primary mb-3">Contact</h4>
-                      <p class="m-0">0984537278623</p>
-                      <p class="m-0">yourmail@gmail.com</p>
+                      <h4 class="text-[1.25rem] text-primary mb-3">Contacto</h4>
+                      <p class="m-0">0997619467</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 md:col-6 xl:col-12">
+                  <div
+                    class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg"
+                  >
+                    <div>
+                      <i
+                        class="lni lni-instagram w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="text-[1.25rem] text-primary mb-3">Red Social</h4>
+                      <p class="m-0">Instagram: @oceanloveplace_ec</p>
                     </div>
                   </div>
                 </div>
@@ -2152,9 +2167,9 @@
                       ></i>
                     </div>
                     <div>
-                      <h4 class="text-[1.25rem] text-primary mb-3">Address</h4>
-                      <p class="m-0">175 5th Ave, New York, NY 10010</p>
-                      <p class="m-0">United States</p>
+                      <h4 class="text-[1.25rem] text-primary mb-3">Dirección</h4>
+                      <p class="m-0">Comuna Jambelí. Santa Elena</p>
+                      <p class="m-0">Ecuador</p>
                     </div>
                   </div>
                 </div>
@@ -2169,9 +2184,9 @@
                       ></i>
                     </div>
                     <div>
-                      <h4 class="text-[1.25rem] text-primary mb-3">Schedule</h4>
-                      <p class="m-0">24 Hours / 7 Days Open</p>
-                      <p class="m-0">Office time: 10:00 AM - 5:30 PM</p>
+                      <h4 class="text-[1.25rem] text-primary mb-3">Horario</h4>
+                      <p class="m-0">24 Horas / 7 días Abierto</p>
+                      <p class="m-0">Horario de oficina: 10:00 AM - 5:30 PM</p>
                     </div>
                   </div>
                 </div>
@@ -2184,27 +2199,28 @@
               >
                 <div class="text-center max-w-[550px] mx-auto mb-12">
                   <h6 class="mb-2 block text-lg font-semibold text-primary">
-                    Get in Touch
+                    ¿Deseas realizar una reservacion?
                   </h6>
-                  <h2 class="mb-3">Ready to Get Started</h2>
+                  <h2 class="mb-3">Reserva tu estancia</h2>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    quiblanditiis praesentium
+                    Completa nuestro formulario de reserva y nos pondremos en contacto contigo lo antes posible.
                   </p>
                 </div>
 
                 <form action="#" method="POST" class="flex flex-col gap-6">
                   <div class="row">
+                    <!-- Nombre completo -->
                     <div class="col-12 md:col-6">
                       <input
                         type="text"
-                        name="name"
+                        name="nombre"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
-                        placeholder="Name"
+                        placeholder="Nombre completo"
                         required
                       />
                     </div>
 
+                    <!-- Email -->
                     <div class="col-12 md:col-6">
                       <input
                         type="email"
@@ -2215,45 +2231,105 @@
                       />
                     </div>
 
+                    <!-- Teléfono -->
                     <div class="col-12 md:col-6">
                       <input
-                        type="text"
-                        name="phone"
+                        type="tel"
+                        name="telefono"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
-                        placeholder="Phone"
+                        placeholder="Teléfono"
+                        required
+                      />
+                    </div>
+
+                    <!-- Número de personas -->
+                    <div class="col-12 md:col-6">
+                      <select
+                        name="personas"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        required
+                      >
+                        <option value="" disabled selected>Número de personas</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4+">4 o más personas</option>
+
+                      </select>
+                    </div>
+
+                    <!-- Fechas -->
+                    <div class="col-12 md:col-6">
+                      <label class="block mb-1 text-sm text-body-light-11 dark:text-body-dark-11">Fecha de llegada</label>
+                      <input
+                        type="date"
+                        name="llegada"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         required
                       />
                     </div>
 
                     <div class="col-12 md:col-6">
+                      <label class="block mb-1 text-sm text-body-light-11 dark:text-body-dark-11">Fecha de salida</label>
                       <input
-                        type="text"
-                        name="subject"
+                        type="date"
+                        name="salida"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
-                        placeholder="Subject"
                         required
                       />
                     </div>
 
+                    <!-- Tipo de habitación -->
+                    <div class="col-12">
+                      <select
+                        name="habitacion"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        required
+                      >
+                        <option value="" disabled selected>Tipo de habitación</option>
+                        <option value="1">Habitacion #1</option>
+                        <option value="2">Habitacion #2</option>
+                        <option value="3">Habitacion #3</option>
+                        <option value="4+">Habitacion #4</option>
+                        <option value="4+">Habitacion #5</option>
+                        <option value="4+">Habitacion Guadalupe</option>
+                      </select>
+                    </div>
+
+                    <!-- ¿Incluye niños o mascotas? -->
+                    <div class="col-12">
+                      <label class="inline-flex items-center gap-2 text-body-light-12 dark:text-body-dark-12">
+                        <input type="checkbox" name="mascotas" class="accent-primary" />
+                        ¿Incluye mascotas?
+                      </label>
+                    </div>
+
+                    <!-- Mensaje especial -->
                     <div class="col-12">
                       <textarea
-                        name="message"
-                        rows="5"
+                        name="mensaje"
+                        rows="4"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
-                        placeholder="Type your message"
-                        required
+                        placeholder="Mensaje o petición especial"
                       ></textarea>
                     </div>
 
+                    <!-- Aceptación de privacidad -->
                     <div class="col-12">
-                      <div class="w-full text-center">
-                        <button
-                          type="submit"
-                          class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10"
-                        >
-                          Send Message
-                        </button>
-                      </div>
+                      <label class="inline-flex items-center gap-2 text-sm text-body-light-11 dark:text-body-dark-11">
+                        <input type="checkbox" name="privacidad" required class="accent-primary" />
+                        Acepto la política de privacidad.
+                      </label>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="col-12 text-center">
+                      <button
+                        type="submit"
+                        class="inline-block px-6 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10"
+                      >
+                        Enviar reserva
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -2265,24 +2341,32 @@
 
       <!-- Map section -->
       <section id="map" class="w-full h-[500px] overflow-hidden -mt-[12rem]">
-        <object
-          data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.0094028113572!2d98.67188956289421!3d3.583155328672593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc1c3eb2fd%3A0x23d431c8a6908262!2sMedan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1723787393945!5m2!1sid!2sid"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.331240420502!2d-80.7350905!3d-2.0480218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902ddfb03e0841f5%3A0x1a6fc896cccdb009!2sOcean%20Love%20Place!5e0!3m2!1ses-419!2sec!4v1717764433396!5m2!1ses-419!2sec"
           class="border-0 w-full h-full"
-        ></object>
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-    </main>
 
+    </main>
+       
     <!-- Footer -->
           <div class="w-full md:w-1/2">
             <div class="my-1 flex justify-center md:justify-end">
               <p class="text-body-dark-11">
-                &#169; 2024 Inazuma Inc. All rights reserved. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                &#169; 2024 Ocean Love Place. Todos los derechos reservados.
+
               </p>
+
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+
 
     <button
       type="button"
