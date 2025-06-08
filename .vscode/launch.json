@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/leoza/AppData/Local/Temp/fbdbb396-edd4-460d-af6c-d3801a7b740c_sistema_operativo.zip.40c/sistema_operativo/sistemaoperativop1/publisher",
+      "program": "c:/Users/leoza/AppData/Local/Temp/fbdbb396-edd4-460d-af6c-d3801a7b740c_sistema_operativo.zip.40c/sistema_operativo/sistemaoperativop1/publisher/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
