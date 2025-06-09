@@ -2736,3 +2736,19 @@ footer {
   height: auto;
   object-fit: contain;
 }
+
+.room-image {
+
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.room-image:hover {
+  transform: scale(1.05);
+}
