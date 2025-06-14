@@ -2781,3 +2781,72 @@ footer {
         grid-template-columns: 1fr;  
       }
     }
+
+
+    
+#atracciones {
+  color: #fff;
+  padding: 3rem 0;
+}
+
+#atracciones .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.titulo-atracciones {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.6rem;
+  text-shadow: 0 3px 18px rgba(16,48,110,0.14);
+}
+
+
+#lugares {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta-atraccion {
+  background: rgba(255,255,255,0.93);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(36,85,173,0.12);
+  border: 1px solid #c7dbf7;
+  padding: 2rem 1.2rem 1.3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  justify-content: center;
+  transition: transform .2s, box-shadow .2s;
+  align-items: center; 
+}
+
+.tarjeta-atraccion:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(36,85,173,0.18);
+}
+
+.atraccion-nombre {
+  font-size: 1.16rem;
+  font-weight: 700;
+  color: #1253b3;
+  margin-bottom: 0.4rem;
+  text-align: center; 
+}
+
+.atraccion-categoria {
+  background: #e8f1fd;
+  color: #1253b3;
+  font-size: 0.98rem;
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.3em 0.9em;
+  text-align: center;          
+  margin-left: auto;             
+  margin-right: auto; 
+  text-transform: capitalize;
+}
