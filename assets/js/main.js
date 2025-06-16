@@ -50,13 +50,13 @@ window.addEventListener("load", function () {
   var theme = localStorage.getItem("Inazuma_WebTheme");
 
   if (theme == "light") {
-    webTheme.innerHTML = '<i class="lni lni-sun"></i>';
+    webTheme.innerHTML = '<i class="lni lni-sun-1"></i>';
   } else if (theme == "dark") {
-    webTheme.innerHTML = '<i class="lni lni-night"></i>';
+    webTheme.innerHTML = '<i class="lni lni-moon-half-right-5"></i>';
   } else {
     theme = "light";
     localStorage.setItem("Inazuma_WebTheme", theme);
-    webTheme.innerHTML = '<i class="lni lni-night"></i>';
+    webTheme.innerHTML = '<i class="lni lni-moon-half-right-5"></i>';
   }
 
   html.dataset.webTheme = theme;
@@ -67,8 +67,8 @@ webTheme.addEventListener("click", function () {
 
   webTheme.innerHTML =
     theme == "dark"
-      ? '<i class="lni lni-sun"></i>'
-      : '<i class="lni lni-night"></i>';
+      ? '<i class="lni lni-sun-1"></i>'
+      : '<i class="lni lni-moon-half-right-5"></i>';
   theme = theme == "dark" ? "light" : "dark";
   localStorage.setItem("Inazuma_WebTheme", theme);
   html.dataset.webTheme = theme;
@@ -200,16 +200,16 @@ portfolioFilters.forEach((filter) => {
 
     let selected = filter.getAttribute("data-filter"),
       itemsToHide = document.querySelectorAll(
-        '.portfolio-grid .portfolio :not([data-filter="' + selected + '"])'
+        '.portfolio-grid .portfolio :not([data-filter="' + selected + '"])',
       ),
       itemsToShow = document.querySelectorAll(
-        '.portfolio-grid .portfolio [data-filter="' + selected + '"]'
+        '.portfolio-grid .portfolio [data-filter="' + selected + '"]',
       );
 
     if (selected == "all") {
       itemsToHide = [];
       itemsToShow = document.querySelectorAll(
-        ".portfolio-grid .portfolio [data-filter]"
+        ".portfolio-grid .portfolio [data-filter]",
       );
     }
 
