@@ -1614,7 +1614,7 @@
                         type="tel"
                         inputmode="tel"
                         autocomplete="tel"
-                        pattern="^[0-9+\s()-]{6,}$"
+                        pattern="^[0-9+\s\(\)\-]{6,}$"
                         required
                         class="px-5 py-3 rounded-md border border-alpha-light dark:border-alpha-dark focus:border-primary focus:outline-none"
                       />
@@ -1693,8 +1693,6 @@
                         <option value="1">Habitación #1</option>
                         <option value="2">Habitación #2</option>
                         <option value="3">Habitación #3</option>
-                        <option value="4">Habitación #4</option>
-                        <option value="5">Habitación #5</option>
                         <option value="guadalupe">Hab. Guadalupe</option>
                       </select>
                     </div>
@@ -1810,6 +1808,8 @@
     <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./src/js/reservationForm.js"></script>
     <script type="module" src="./assets/js/atracciones.js"></script>
+    <script type="module" src="./assets/js/form.js"></script>
+    <script type="module" src="./assets/js/firebase.js"></script>
     <script>
       // Scroll Reveal
       const sr = ScrollReveal({
