@@ -1,4 +1,4 @@
-const API_KEY = "5ae2e3f221c38a28845f05b6e14d7215fc0346fe5d7a049649c323b8";
+const API_KEY = import.meta.env.VITE_OPENTRIPMAP_API_KEY;
   /*const LAT = -2.0482212839050518; // Latitud del hotel
   const LON = -80.73457306502202; // Longitud del hotel
   const RADIUS = 5000; // ahora: 170 km
