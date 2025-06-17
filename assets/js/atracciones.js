@@ -12,7 +12,6 @@ const LON = -80.96441417644762;
 const RADIUS = 2000;
 const KINDS = "interesting_places,beaches,museums,architecture,cultural,natural";
 
-console.log('OTM key:', import.meta.env.VITE_OPENTRIPMAP_API_KEY);
 fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=${RADIUS}&lon=${LON}&lat=${LAT}&kinds=${KINDS}&limit=50&format=json&apikey=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
