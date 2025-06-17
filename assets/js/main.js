@@ -29,8 +29,8 @@ navbarToggler.addEventListener("click", function () {
   navbar.classList.toggle("menu-show");
   this.ariaExpanded = !isExpanded;
   navbarToggler.innerHTML = navbar.classList.contains("menu-show")
-    ? '<i class="lni lni-close"></i>'
-    : '<i class="lni lni-menu"></i>';
+    ? '<i class="lni lni-xmark"></i>'
+    : '<i class="lni lni-menu-hamburger-1"></i>';
 });
 
 // Sticky navbar
